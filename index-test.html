@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="mainIniciarSesion">
+        <section class="seccionIniciarSesion">
+            <form class="formularioIniciarSesion" id="formularioIniciarSesion">
+                <h2 class="tituloIniciarSesion">Iniciar Sesion</h2>
+                <div>
+                    <span id="errUsr">Error, ingrese un email con formato 'ejemplo@email.com'.</span>
+                    <input class="input" type="text" placeholder="Nombre de usuario o E-mail" name="nombreUsuario" id="usuario" value="nora@gmail.com">
+                </div>
+                <div>
+                    <span id="errPsw">Error, ingrese una contraseña de al menos 8 caracteres, numeros mayusculas y minusculas.</span>
+                    <input class="input" type="password" placeholder="Contraseña" name="contrasena" id="contrasena" value="Noadhe77">
+                </div>
+                <label class="mostrarPsw">
+                    <input type="checkbox" onclick="mostrarPSW()" id="mostrarPswchkbx">
+                    Mostrar contraseña
+                </label>
+                <div>
+                    <!-- <input type="button" class="botonIniciarSesion" id="botonIniciarSesion" value="Aceptar"> -->
+                    <button class="botonIniciarSesion" id="botonIniciarSesion">Aceptar</button>
+
+                </div>
+                <div>
+                    <a class="ayudaRegistrarse" href="../html/registrarse.html">
+                        Registrarse
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../js/test.js"></script>
+</body>
+</html>

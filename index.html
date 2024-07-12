@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CAC - Time to travel</title>
+
+   <!-- CSSs -->
+   <link rel="stylesheet" href="./css/general.css">
+
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="./img/iconos/icons8-travel-64.png" type="image/x-icon">
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet">
+
+
+   <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body id="inicio">
+  
+   <header class="header">
+      <nav class="navbar navbar-expand-md navegacion navbar-light bg-lignt">
+         <div class="container-fluid">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbar-toggler" aria-controls="navbarToggler" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon "></span>
+            </button>
+            <a class="anclaLogo" href="./#">
+               <img class="imgLogo" src="./img/iconos/Time to travel.png" alt="CAC - Time to travel">
+               <span class="textoLogo">
+                  CAC - Time to travel
+               </span>
+            </a>
+            <div class="collapse navbar-collapse divisionDrch" id="navbar-toggler">
+               <a class="anclaLogoMenu" href="./#">
+                  <img class="imgLogo" src="./img/iconos/Time to travel.png" alt="CAC - Time to travel">
+                  <span class="textoLogo">
+                     CAC - Time to travel
+                  </span>
+               </a>
+               <ul class="listaNav navbar-nav d-flex">
+
+                  <li class="listItem">
+                     <a class="linkNav" href="./#destinos">Destinos</a>
+                  </li>
+                  <li class="listItem">
+                     <a class="linkNav" href="./html/registrarse.html">Registrarse</a>
+                  </li>
+                  <li class="listItem" id="iniciarSesionButton">
+                     <!-- <a class="linkNav iniciarSesion" id="iniciarSesionButton" href="./html/iniciarSesion.html">Iniciar Sesión</a> -->
+                  </li>
+
+               </ul>
+               
+            </div>
+           
+         </div>
+         
+      </nav>
+      <div id="UsuarioEnLinea"></div>
+   </header>
+
+
+   <main>
+      <section class="main">
+         <h1 class="main_titulo">
+            Embárcate en una aventura <br>
+            inolvidable
+         </h1>
+         <h2 class="main_subtitulo">
+            Disfruta de tus viajes <br>
+            sin importar donde sea tu destino
+         </h2>
+         <a class="main_empezar" href="./html/registrarse.html">
+            Empezar
+         </a>
+      </section>
+
+      <section class="formulario_main">
+         <form>
+            <div class="formulario_inicio">
+               <div>
+                  <label for="origen">Origen</label>
+                  <input type="text" id="origen" name="origen" placeholder="Origen">
+               </div>
+               <div>
+                  <label for="destino">Destino</label>
+                  <input type="text" id="destino" name="destino" placeholder="Destino" required>
+               </div>
+               <div>
+                  <label for="fecha_ida">Fecha de Ida</label>
+                  <input type="date" id="fecha_ida" name="fecha_ida" placeholder="Fecha de Ida" required>
+               </div>
+               <div>
+                  <label for="fecha_vuelta">Fecha de Vuelta</label>
+                  <input type="date" id="fecha_vuelta" name="fecha_vuelta" placeholder="Fecha de Vuelta">
+               </div>
+               <div>
+                  <button type="submit" class="formulario_inicio_buscar">Buscar</button>
+               </div>
+            </div>
+         </form>
+      </section>
+
+      <section class="flex-container flex-fondo" id="destinos">
+         <h2 class="ciudades_titulo">
+            Las ciudades más visitadas
+         </h2>
+         <div class="ciudades_mas_visitadas">
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Amsterdam.jpg">
+               <h4 class="nombre_ciudades">
+                  Ámsterdam<br>Países Bajos
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Atenas.jpg">
+               <h4 class="nombre_ciudades">
+                  Atenas<br>Grecia
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Berlin.jpg">
+               <h4 class="nombre_ciudades">
+                  Berlin<br>Alemania
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/bogota.jpg">
+               <h4 class="nombre_ciudades">
+                  Bogotá<br>Colombia
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Buenos Aires.jpeg">
+               <h4 class="nombre_ciudades">
+                  Buenos Aires<br>Argentina
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/caracas.jpg">
+               <h4 class="nombre_ciudades">
+                  Caracas<br>Venezuela
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Estocolmo.jpg">
+               <h4 class="nombre_ciudades">
+                  Estocolmo<br>Suecia
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/lima.JPG">
+               <h4 class="nombre_ciudades">
+                  Lima<br>Perú
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Londres.jpg">
+               <h4 class="nombre_ciudades">
+                  Londres<br>Inglaterra
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Machu_Picchu.jpg">
+               <h4 class="nombre_ciudades">
+                  Machu Picchu<br>Perú
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/madrid.jpg">
+               <h4 class="nombre_ciudades">
+                  Madrid<br>España
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Miami.jpg">
+               <h4 class="nombre_ciudades">
+                  Miami<br>Florida
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/milan.jpg">
+               <h4 class="nombre_ciudades">
+                  Milán<br>Italia
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Moscu.jpg">
+               <h4 class="nombre_ciudades">
+                  Moscú<br>Rusia
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Nueva York.jpg">
+               <h4 class="nombre_ciudades">
+                  Nueva York<br>EEUU
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Paris.jpg">
+               <h4 class="nombre_ciudades">
+                  París<br>Francia
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Roma.jpg">
+               <h4 class="nombre_ciudades">
+                  Roma<br>Italia
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/San pablo.jpg">
+               <h4 class="nombre_ciudades">
+                  San Pablo<br>Brasil
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Shang hai.JPG">
+               <h4 class="nombre_ciudades">
+                  Shanghai<br>China
+               </h4>
+            </div>
+            <div class="ciudad">
+               <img class="imagenes_ciudades" src="./img/ciudades/Tokyo.jpg">
+               <h4 class="nombre_ciudades">
+                  Tokyo<br>Japón
+               </h4>
+            </div>
+         </div>
+
+      </section>
+
+      <section class="flex-container2 flex_fondo2">
+         <h2 class="hoteles_titulo">
+            Nuestros mejores hoteles
+         </h2>
+         <div class="hoteles">
+            <div class="mejores_hoteles">
+               <img class="imagenes_hoteles" src="./img/hoteles/Hotel1.webp">
+            </div>
+            <div class="mejores_hoteles">
+               <img class="imagenes_hoteles" src="./img/hoteles/Hotel2.jpg">
+            </div>
+            <div class="mejores_hoteles">
+               <img class="imagenes_hoteles" src="./img/hoteles/Hotel6.jpg">
+            </div>
+            <div class="mejores_hoteles">
+               <img class="imagenes_hoteles" src="./img/hoteles/Hotel4.jpg">
+            </div>
+            <div class="mejores_hoteles">
+               <img class="imagenes_hoteles" src="./img/hoteles/Hotel5.jpg">
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="bloqueSuperiorF">
+         <div class="logoF">
+            <img class="imgLogoF" src="./img/iconos/Time to travel.png" alt="CAC - Time to travel">
+            <span class="textoLogoF">CAC - Time to travel</span>
+
+         </div>
+         <div class="redesF_aux">
+            <a href="http://www.facebook.com" target="_blank">
+               <img class="redesF" src="./img/iconos/icons8-facebook-nuevo-50.png" alt="En Facebook">
+            </a>
+            <a href="http://www.twitter.com" target="_blank">
+               <img class="redesF" src="./img/iconos/icons8-logo-de-twitter-50.png" alt="En twitter">
+            </a>
+            <a href="http://www.instagram.com" target="_blank">
+               <img class="redesF" src="./img/iconos/icons8-logo-de-instagram-50.png" alt="En instagram">
+            </a>
+            <a href="http://www.linkedin.com" target="_blank">
+               <img class="redesF" src="./img/iconos/icons8-linkedin-50.png" alt="En Linkedin">
+            </a>
+            <a href="http://www.tiktok.com" target="_blank">
+               <img class="redesF" src="./img/iconos/icons8-tik-tok-50.png" alt="En tiktok">
+            </a>
+         </div>
+
+      </div>
+      <hr>
+      <div class="bloqueInferiorF">
+         <div class="atencionF">
+            <h4>Atención al cliente</h4>
+            <h3>0810-CAC-TIME</h3>
+            <h5>Lunes a sabados de 10 a 21 hs.</h5>
+         </div>
+         <div class="ventasF">
+            <h4>Ventas</h4>
+            <h3>0810-CAC-TIME</h3>
+            <h5>Todos los días de 10 a 21 hs.</h5>
+         </div>
+         <div class="extrasF">
+            <ul>
+               <li><a class="linkF" href="#">Términos y condiciones</a></li>
+               <li><a class="linkF" href="#">Preguntas frecuentes</a></li>
+               <li><a class="linkF" href="#">Ayuda</a></li>
+
+            </ul>
+         </div>
+      </div>
+      <div class="derechos">Creado y mantenido por Anahi, Denis y Marcelo para Codo a Codo 2024</div>
+
+      <a href="./#inicio" class="flechaArriba">
+         <img class="imgFlechaArriba" src="./img/iconos/icons8-arriba-94.png" alt="ir arriba flecha">
+      </a>
+   </footer>
+   <script src="./js/scriptini.js"></script>
+</body>
+
+</html>
