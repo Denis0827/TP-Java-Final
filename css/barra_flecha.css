@@ -1,0 +1,41 @@
+/* Barra de Scroll ancho (width) */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Carril */
+body::-webkit-scrollbar-track {
+    border: 8px;
+}
+
+/* Desplazador */
+body::-webkit-scrollbar-thumb {
+    background: var(--celeste-head);
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+}
+
+.flechaArriba {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    background-color: var(--negro-transp);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    transition: transform 1.25s;
+
+    &:hover {
+        transform: scale(2);
+    }
+}
+
+.imgFlechaArriba {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Administrador de usuarios</title>
+
+    <script src="../js/auth.js"></script>
+
+
+    <!-- CSSs -->
+    <link rel="stylesheet" href="../css/admin.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/iconos/icons8-travel-96-01.ico" type="image/x-icon">
+
+    <!-- Font -->
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+   
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+ 
+
+</head>
+<body>
+
+    <header class="header2">
+        <nav class="navegacion2">
+            <a class="anclaLogo2" href="#">
+                <img class="imgLogo2" src="../img/iconos/Time to travel.png" alt="CAC - Time to travel">
+                <span class="textoLogo2">
+                    CAC - Time to travel
+                </span>
+            </a>
+            <ul class="listaNav2">
+                <li class="listItem2"><a class="linkVolver2" href="../index.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-fondo">
+            <div class="titulo"><b>Administrador de Usuarios</b></div>
+            <div >
+                <form class="form-container">
+                    <div class="form-group">
+                        <label for="id">Id</label>
+                        <div class="input-container">
+                            <input class="input-form" type="text" placeholder="Id" name="id" id="id" disabled>
+                            <input class="check" type="checkbox" name="idcheck" id="idcheck" onclick="habilitaId()">
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input class="input" type="text" placeholder="Nombre" name="nombre" id="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input class="input" type="text" placeholder="Apellido" name="apellido" id="apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="input" type="text" placeholder="E-mail" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña</label>
+                        <input class="input" type="text" placeholder="Contraseña" name="contrasena" id="contrasena">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecnac">Fecha Nacimiento</label>
+                        <input class="input" type="text" placeholder="YYYY-MM-DD" name="fecnac" id="fecnac">
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País</label>
+                        <input class="input" type="text" placeholder="País" name="pais" id="pais">
+                    </div>
+                    <div class="form-group">
+                        <label for="activo">Activo</label>
+                        <input class="check2" type="checkbox" name="activo" id="activo">
+                    </div>
+                    <div class="form-group">
+                        <label for="admin">Admin</label>
+                        <input class="check2" type="checkbox" name="admin" id="admin">
+                    </div>
+                </form>
+            </div>
+        
+        <div class="form-acciones">
+            <div>
+                <button class="boton" id="actualizarcrear" onclick="actualizar()">Actualizar/Crear datos</button>
+            </div>
+            <div>
+                <button class="boton" id="borrarcampos" onclick="borrarcampos()">Borrar campos</button>
+            </div>
+            <div>
+                <button class="boton" id="logout" onclick="logout()">Cerrar sesion</button>
+            </div>
+            
+        </div>
+        </section>
+
+        <section class="tabla-fondo">
+        
+            <div class="container-filtro">
+                <input class="filtro" type="text" placeholder="Ingrese el filtro para buscar en nombre apellido e email"
+                    id="filtro">
+
+                <button class="boton2" id="listar">Listar/Filtrar</button>
+            </div>
+            
+    
+            <div>
+                <table class="tabla-usuarios">
+                    <thead>
+                        <tr>
+                            <th>Id/Seleccionar</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Contraseña</th>
+                            <th>Fecha Nacimiento</th>
+                            <th>Pais</th>
+                            <th>Activo</th>
+                            <th>Admin</th>
+                            <th>Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="datos">
+                        <tr>
+                            <td>1</td>
+                            <td>Marcelo</td>
+                            <td>Garassino</td>
+                            <td>garassi@gmail.com</td>
+                            <td>Magmagmag18</td>
+                            <td>1974-05-18</td>
+                            <td>Argentina</td>
+                            <td>Sí</td>
+                            <td>Sí</td>
+                            <td><button class="boton-tabla">Borrar</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Denis</td>
+                            <td>Wu</td>
+                            <td>wudenis@gmail.com</td>
+                            <td>1234</td>
+                            <td>2004-08-27</td>
+                            <td>Argentina</td>
+                            <td>Sí</td>
+                            <td>Sí</td>
+                            <td><button class="boton-tabla">Borrar</button></td>
+                        </tr>
+                        <!-- Agrega más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

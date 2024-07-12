@@ -1,0 +1,95 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.flex-fondo {
+    padding-top: 8vw;
+    background-color: var(--azul-oscuro);
+}
+
+.imagenes_ciudades {
+    height: 16vw;
+    width: 16vw;
+    border-radius: 6%;
+    transition: transform 1s, box-shadow 1s;
+
+    &:hover {
+        box-shadow: 0 0 25px var(--blanco);
+        border-radius: 6%;
+        transform: scale(1.1);
+    }
+}
+
+.imagenes_izq {
+    margin-left: 10vw;
+}
+
+.imagenes_der {
+    margin-right: 10vw;
+}
+
+.ciudades_mas_visitadas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    row-gap: 3vw;
+    width: 85%;
+    padding-bottom: 8vw;
+}
+
+.ciudad {
+    width: 20%;
+    text-align: center;
+}
+
+.nombre_ciudades {
+    text-align: center;
+    color: var(--blanco);
+    padding-top: 1.5vw;
+    font-size: 1.2vw;
+}
+
+.ciudades_titulo {
+    color: var(--blanco);
+    font-size: 2vw;
+}
+
+/* Section mejores hoteles */
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_fondo2 {
+    padding-top: 6vw;
+    background-color: var(--celeste-section);
+    padding-bottom: 6vw;
+}
+
+.hoteles_titulo {
+    color: var(--blanco);
+    text-align: center;
+    margin-bottom: 3.5vw;
+    font-size: 2vw;
+}
+
+.hoteles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.imagenes_hoteles {
+    margin: 0% 5%;
+    height: 15vw;
+    width: 13vw;
+    border-radius: 5%;
+}

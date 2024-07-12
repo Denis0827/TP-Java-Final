@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="../css/general.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/iconos/icons8-travel-96-01.ico" type="image/x-icon">
+
+    <!--Sweetalert2-->
+
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="bodyIniciarSesion">
+
+    <header class="header2">
+        <nav class="navegacion2">
+            <a class="anclaLogo2" href="#">
+                <img class="imgLogo2" src="../img/iconos/Time to travel.png" alt="CAC - Time to travel">
+                <span class="textoLogo2">
+                    CAC - Time to travel
+                </span>
+            </a>
+            <ul class="listaNav2">
+                <li class="listItem2"><a class="linkVolver2" href="../index.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="mainIniciarSesion">
+        <section class="seccionIniciarSesion">
+            <form class="formularioIniciarSesion" id="formularioIniciarSesion">
+                <h2 class="tituloIniciarSesion">Iniciar Sesion</h2>
+                <div>
+                    <span id="errUsr">Error, ingrese un email con formato 'ejemplo@email.com'.</span>
+                    <input class="input" type="text" placeholder="Nombre de usuario o E-mail" name="nombreUsuario" id="usuario">
+                </div>
+                <div>
+                    <span id="errPsw">Error, ingrese una contraseña de al menos 8 caracteres, numeros mayusculas y minusculas.</span>
+                    <input class="input" type="password" placeholder="Contraseña" name="contrasena" id="contrasena">
+                </div>
+                <label class="mostrarPsw">
+                    <input type="checkbox" onclick="mostrarPSW()" id="mostrarPswchkbx">
+                    Mostrar contraseña
+                </label>
+                <div>
+                    <!-- <input type="button" class="botonIniciarSesion" id="botonIniciarSesion" value="Aceptar"> -->
+                    <button class="botonIniciarSesion" id="botonIniciarSesion">Aceptar</button>
+
+                </div>
+                <div>
+                    <a class="ayudaRegistrarse" href="../html/registrarse.html">
+                        Registrarse
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

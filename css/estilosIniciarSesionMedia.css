@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    .seccionIniciarSesion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .formularioIniciarSesion {
+        text-align: center;
+        margin-top: 5vh;
+        padding: 1vh;
+        display: block;
+        height: 50vh;
+        width: 350px;
+        border-radius: 5px;
+        background-color: var(--color-fondo);
+    }
+
+    .input {
+        font-size: 1em;
+        height: 5.2vh;
+        width: 90%;
+        border-radius: 15px;
+        border: 2px solid var(--color-relleno);
+        outline: none;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        background-color: var(--color-fondo);
+    }
+
+    .botonIniciarSesion {
+        width: 90%;
+    }
+
+    .ayudaRegistrarse {
+        margin-bottom: 20px;
+    }
+}

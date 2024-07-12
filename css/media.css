@@ -1,0 +1,271 @@
+@media (width <= 768px) {
+
+    /* Header */
+    .header {
+        height: 35%;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    .anclaLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0px;
+    }
+
+    .anclaLogoMenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 1.5s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    /* ----------------------------------------------------nav-togler---------------------------------------- */
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .custom-toggler.navbar-toggler {
+        border-color: rgb(255, 255, 255);
+    }
+
+    .navbar .navbar-toggler:focus {
+        color: transparent;
+    }
+
+    /* ----------------------------------------------------hasta aca---------------------------------------- */
+    .imgLogo {
+        width: 10vw;
+    }
+
+    .listaNav {
+        flex-direction: column;
+        line-height: 5vh;
+    }
+
+    /* Main */
+    .main {
+        text-align: center;
+        background-image: linear-gradient(to right top,
+                #0e49698a,
+                #4802a28a), url(../img/Fondo2.jpg);
+        height: 6%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_titulo {
+        padding-top: 3%;
+        color: var(--blanco);
+        font-size: 5vw;
+    }
+
+    .main_subtitulo {
+        padding-top: 2vh;
+        color: var(--blanco);
+        font-size: 2vw;
+    }
+
+    .main_empezar {
+        text-decoration: none;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        background-color: orange;
+        padding: 1.4vh 1.8vw;
+        color: var(--blanco);
+        font-size: 2vw;
+        /* 1.4rem; */
+        border-radius: 5px;
+    }
+
+    /* Section */
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .flex-fondo {
+        padding-top: 3vh;
+        background-color: var(--azul-oscuro);
+    }
+
+    .ciudades_mas_visitadas {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        width: 97%;
+    }
+
+    .ciudad {
+        width: 40%;
+    }
+
+    .imagenes_ciudades {
+        height: 32vw;
+        width: 32vw;
+        border-radius: 6%;
+        transition: transform 1s, box-shadow 1s;
+
+        &:hover {
+            box-shadow: 0 0 25px var(--blanco);
+            border-radius: 6%;
+            transform: scale(1.1);
+        }
+    }
+
+    .nombre_ciudades {
+        color: var(--blanco);
+        font-size: 2vw;
+        padding-top: 1.5vh;
+    }
+
+    .ciudades_titulo {
+        color: var(--blanco);
+        font-size: 5vw;
+    }
+
+    .hoteles_titulo {
+        font-size: 5vw;
+    }
+
+    /* Footer */
+    .logoF {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+
+    .imgLogoF {
+        width: 7vh;
+    }
+
+    .bloqueInferiorF {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 1%;
+    }
+
+    .atencionF {
+        width: 50%;
+        padding: 0% 3%;
+        text-align: center;
+        line-height: var(--interlineado-F);
+
+        h4 {
+            font-size: 1em;
+        }
+
+        h3 {
+            font-size: 1.17em;
+        }
+
+        h5 {
+            font-size: 0.83em;
+        }
+    }
+
+    .ventasF {
+        width: 50%;
+        padding: 0% 3%;
+        text-align: center;
+        line-height: var(--interlineado-F);
+
+        h4 {
+            font-size: 1em;
+        }
+
+        h3 {
+            font-size: 1.17em;
+        }
+
+        h5 {
+            font-size: 0.83em;
+        }
+    }
+
+    .extrasF {
+        width: 50%;
+        margin-left: 0px;
+        padding: 0% 3%;
+        text-align: center;
+
+        ul {
+            padding-left: 0rem;
+        }
+
+        li {
+            list-style-type: none;
+            line-height: var(--interlineado-F);
+
+            a {
+                text-decoration: none;
+                font-size: 0.83em;
+            }
+        }
+    }
+
+
+    /* -----------------------------------------Header2--------------------------------- */
+    .header2 {
+        height: 35%;
+    }
+
+    .navegacion2 {
+        flex-direction: column;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    .anclaLogo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0px;
+    }
+
+    .anclaLogoMenu2 {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 1.5s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .imgLogo2 {
+        width: 10vw;
+    }
+
+    .listaNav2 {
+        flex-direction: column;
+        line-height: 5vh;
+    }
+
+}
+
+@media (width=768px) {
+    .anclaLogo {
+        display: none;
+    }
+}

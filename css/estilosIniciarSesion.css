@@ -1,0 +1,116 @@
+@import url(estilosIniciarSesionMedia.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bodyIniciarSesion {
+    background-image: url('../img/viajes.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.seccionIniciarSesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.logoTextoIniciarSesion {
+    font-size: 1.2em;
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.formularioIniciarSesion {
+    text-align: center;
+    margin-top: 5vh;
+    padding: 1vh;
+    display: block;
+    height: 50vh;
+    /* 60vh; */
+    width: 350px;
+    border-radius: 5px;
+    background-color: var(--color-fondo);
+}
+
+.tituloIniciarSesion {
+    font-size: 1.8em;
+    color: var(--color-azul);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+input {
+    font-size: 1em;
+    height: 5.2vh;
+    width: 18vw;
+    border-radius: 15px;
+    border: 2px solid var(--color-relleno);
+    outline: none;
+    margin-bottom: 4vh;
+    background-color: var(--color-fondo);
+
+}
+
+.botonIniciarSesion {
+    font-size: 1.2em;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    border-radius: 5px;
+    height: 7vh;
+    width: 18vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+.botonIniciarSesion:hover {
+    background-color: var(--color-celeste);
+    color: var(--color-blanco);
+}
+
+.ayudaRegistrarse {
+    margin-top: 0px;
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}
+
+#errUsr {    
+    font-size: x-small;
+    color:red;
+    font-weight: bold;
+    justify-content: center;
+    display:none;
+} 
+
+#errPsw {    
+    font-size: x-small;
+    color:red;
+    font-weight: bold;
+    justify-content: center;
+    display:none;
+} 
+  
+@keyframes blinking {
+    50% {
+      border-color:red;
+    }
+  } 
+
+.mostrarPsw{
+    display:flex;
+    justify-content: center;
+    font-size:small;
+}
+
+#mostrarPswchkbx{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}

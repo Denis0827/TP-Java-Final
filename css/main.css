@@ -1,0 +1,37 @@
+.main {
+    text-align: center;
+    background-image: linear-gradient(to right top,
+            #0e49698a,
+            #4802a28a), url(../img/Fondo2.jpg);
+    height: 46vw;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_titulo {
+    color: var(--blanco);
+    font-size: 4vw;
+    /* 4rem; */
+}
+
+.main_subtitulo {
+    padding-top: 2vh;
+    color: var(--blanco);
+    font-size: 2vw;
+}
+
+.main_empezar {
+    text-decoration: none;
+    margin-top: 3vh;
+    background-color: orange;
+    padding: 1.4vh 1.8vw;
+    color: var(--blanco);
+    font-size: 1.2vw;
+    border-radius: 15px;
+}

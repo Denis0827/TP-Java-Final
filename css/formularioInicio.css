@@ -1,0 +1,104 @@
+.formulario_main {
+    padding-top: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-oscuro);
+}
+
+/* Estilos para el formulario */
+.formulario_inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-naranja);
+    padding: 2vw 5vw;
+    border-radius: 30px;
+    color: var(--color-blanco);
+    width: 80vw;
+    height: 10vw;
+    margin: 0 auto;
+    margin-top: 1.2vh;
+}
+
+.formulario_inicio>div {
+    border: none;
+    padding: 1vh;
+    margin-bottom: 2vh;
+}
+
+.formulario_inicio>div>label {
+    margin-top: 1vh;
+}
+
+.formulario_inicio_buscar {
+    background-color: var(--color-naranja2);
+    width: 6vw;
+    height: 5vh;
+    margin-top: 2vw;
+    color: black;
+    border-radius: 15px;
+    border: none;
+}
+
+.formulario_inicio_buscar:hover {
+    background-color: var(--color-naranja3);
+}
+
+.formulario_inicio input {
+    width: 16vw;
+}
+
+@media (max-width: 1300px) {
+    .formulario_inicio {
+        width: 88vw;
+        height: 10vh;
+    }
+
+    .formulario_inicio_buscar {
+        width: 7vw;
+        height: 5vh;
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .formulario_inicio {
+        flex-direction: row;
+        /* Cambiar la dirección del flujo a horizontal */
+        flex-wrap: wrap;
+        /* Permitir que los elementos se envuelvan en varias líneas */
+        align-items: center;
+        padding-top: 1vh;
+        height: 25vh;
+        /* Permitir que la altura se ajuste automáticamente */
+        width: 68vw;
+        /* Permitir que la altura se ajuste automáticamente */
+    }
+
+    .formulario_inicio>div {
+        width: 27vw;
+        margin-bottom: 1vh;
+    }
+
+    .formulario_inicio>div>label {
+        font-size: 2vw;
+    }
+
+    .formulario_inicio>div>input {
+        width: 25vw;
+        height: 2.3vh;
+        font-size: 1.3vh;
+        padding: 1vh;
+        /* Ajustar el padding del input */
+    }
+
+    .formulario_inicio_buscar {
+        width: 25vw;
+        height: 3vh;
+        align-items: center;
+        font-size: 1.5vh;
+        margin-top: 0;
+    }
+}

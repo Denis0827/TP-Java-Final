@@ -1,0 +1,121 @@
+.footer {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-color: var(--gris-foot);
+    color: var(--blanco);
+    height: 35%;
+}
+
+.bloqueSuperiorF {
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoF {
+    width: 50%;
+    text-align: center;
+}
+
+.imgLogoF {
+    width: 4vw;
+    vertical-align: middle;
+    filter: grayscale(100%);
+}
+
+.textoLogoF {
+    vertical-align: middle;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.redesF_aux {
+    width: 50%;
+    text-align: center;
+}
+
+.redesF {
+    width: var(--redes-size);
+    filter: invert(100%);
+    transition: transform 1s, box-shadow 1s;
+
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px var(--resplandor);
+        border-radius: 10px;
+    }
+}
+
+.bloqueInferiorF {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+}
+
+.atencionF {
+    width: 50%;
+    text-align: center;
+    line-height: var(--interlineado-F);
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.17em;
+    }
+
+    h5 {
+        font-size: 0.83em;
+    }
+}
+
+.ventasF {
+    width: 50%;
+    text-align: center;
+    line-height: var(--interlineado-F);
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.17em;
+    }
+
+    h5 {
+        font-size: 0.83em;
+    }
+}
+
+.extrasF {
+    width: 50%;
+    text-align: center;
+
+    li {
+        list-style-type: none;
+        line-height: var(--interlineado-F);
+
+        a {
+            text-decoration: none;
+            font-size: 0.83em;
+        }
+    }
+}
+
+.linkF {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 700;
+    line-height: 2em;
+}
+
+.derechos {
+    padding-top: 5vw;
+    text-align: center;
+    font-size: smaller;
+}

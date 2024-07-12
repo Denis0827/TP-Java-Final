@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../css/general.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/iconos/icons8-travel-96-01.ico" type="image/x-icon">
+
+    <!--Sweetalert2-->
+
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="bodyRegistrarse">
+
+    <header class="header2">
+        <nav class="navegacion2">
+            <a class="anclaLogo2" href="#">
+                <img class="imgLogo2" src="../img/iconos/Time to travel.png" alt="CAC - Time to travel">
+                <span class="textoLogo2">
+                    CAC - Time to travel
+                </span>
+            </a>
+            <ul class="listaNav2">
+                <li class="listItem2"><a class="linkVolver2" href="../index.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainRegistrarse">
+       
+        <section class="seccionRegistrarse">
+            
+            <form class="formulario_registrarse">
+                <h2 class="tituloRegistrarse">Registrarse</h2>
+
+                <div>
+                    <input class="input" type="text" placeholder="Nombre" name="nombre" id="nombre"> <!-- required -->
+                </div>
+                <div>
+                    <input class="input" type="text" placeholder="Apellido" name="apellido" id="apellido">
+                </div>
+                <div>
+                    <input class="input" type="text" placeholder="Email" name="email" id="email">
+                </div>
+                <div>
+                    <input class="input" type="password" placeholder="Contraseña" name="contrasena" id="contrasena">
+                </div>
+                <div>
+                    <input class="input" type="date" placeholder="Fecha de nacimiento (dd/mm/aaaa)" id="fechaDeNacimiento"
+                        name="fechaDeNacimiento">
+                </div>
+                <div>
+                    <select class="input" name="pais" id="pais">
+                        <option value="">Pais</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                    </select>
+                </div>
+                <div class="cajaCheck">
+                    <input class="checkTerminosYCondiciones" type="checkbox" id="terminos" required>
+                    <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
+                </div>
+                <!-- <input type="submit" class="boton_enviar_registrarse" value="Aceptar"> -->
+                <button class="boton_enviar_registrarse" id="boton_enviar_registrarse">Aceptar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../js/registrarse.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.all.min.js"></script>
+    
+</body>
+
+</html>

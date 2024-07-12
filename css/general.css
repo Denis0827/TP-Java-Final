@@ -1,0 +1,43 @@
+@import url(barra_flecha.css);
+@import url(fuentes.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(main.css);
+@import url(section.css);
+@import url(media.css);
+@import url(estilosIniciarSesion.css);
+@import url(estilosRegistrarse.css);
+@import url(formularioInicio.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu";
+}
+
+:root {
+    --azul-oscuro: rgba(42, 42, 114, 1);
+    --blanco: white;
+    --celeste-head: rgb(57, 88, 226);
+    --azul-head: rgb(74, 74, 247);
+    --azul-head2: rgb(105, 105, 212);
+    --celeste-section: rgb(42, 54, 139);
+    --negro: black;
+    --negro-transp: rgba(0, 0, 0, 0.2);
+    --resplandor: rgba(0, 0, 0, 0.5);
+    --blanco: rgba(255, 255, 255, 1);
+    --gris-foot: #454848;
+    --redes-size: 2.5rem;
+    --interlineado-F: 2.5vh;
+    --color-blanco: white;
+    --color-rojo: #E53854;
+    --color-celeste: #2c80c5;
+    --color-azul: #19588b;
+    --color-negro: black;
+    --color-fondo: #ffffffe8;
+    --color-relleno: rgba(150, 150, 150, 0.644);
+    --color-naranja: rgb(30, 78, 188);
+    --color-naranja2: rgb(243, 173, 44);
+    --color-naranja3: rgb(255, 145, 0);
+    --color: #2a2a72;
+}

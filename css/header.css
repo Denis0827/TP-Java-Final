@@ -1,0 +1,204 @@
+.header {
+    background: linear-gradient(90deg, var(--azul-head2) 0%, var(--azul-head) 35%, var(--celeste-head) 65%);
+    height: 20%;
+    width: 100%;
+    position: sticky;
+    /*El header queda fijo*/
+    z-index: 100;
+    /*Queda encima de cualquier otra cosa*/
+    top: 0;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 1.5vh;
+}
+
+.anclaLogo {
+    display: none;
+    text-decoration: none;
+    transition: transform 1.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.anclaLogoMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 1.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.imgLogo {
+    width: 4vw;
+    vertical-align: middle;
+}
+
+.textoLogo {
+    vertical-align: middle;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.divisionDrch {
+    justify-content: space-around;
+}
+
+.listaNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.listaItem {
+    margin-right: 30px;
+}
+
+#iniciarSesionButton:hover{
+    cursor:pointer;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    /* Agregar efecto de botón presionado */
+    transition: transform 1s, box-shadow 1s;
+
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px var(--resplandor);
+        border-radius: 10px;
+    }
+}
+
+.linkVolver {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.1rem;
+    padding: 0.5rem 2.5rem;
+    /* Agregar efecto de botón presionado */
+    transition: transform 1s, box-shadow 1s;
+
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px var(--resplandor);
+        border-radius: 10px;
+    }
+}
+
+.iniciarSesion {
+    background-color: var(--negro);
+    color: white;
+    border-radius: 5px;
+    /* Agregar efecto de botón presionado */
+    transition: transform 1s, box-shadow 1s;
+
+    &:hover {
+        background-color: var(--negro);
+    }
+}
+
+#UsuarioEnLinea {
+    color: var(--blanco);
+    text-align: center;
+}
+
+/* ---------------------------------------Header2------------------------------------------ */
+
+
+.header2 {
+    background: linear-gradient(90deg, var(--azul-head2) 0%, var(--azul-head) 35%, var(--celeste-head) 65%);
+    height: 5vw;
+    width: 100%;
+    position: sticky;
+    /*El header queda fijo*/
+    z-index: 100;
+    /*Queda encima de cualquier otra cosa*/
+    top: 0;
+    /* border-radius: 25px; */
+}
+
+.navegacion2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 1.5vh;
+}
+
+.anclaLogo2 {
+    text-decoration: none;
+    transition: transform 1.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.imgLogo2 {
+    width: 4vw;
+    vertical-align: middle;
+}
+
+.textoLogo2 {
+    vertical-align: middle;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.listaNav2 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.listaItem2 {
+    margin-right: 30px;
+}
+
+.linkNav2 {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    /* Agregar efecto de botón presionado */
+    transition: transform 1s, box-shadow 1s;
+
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px var(--resplandor);
+        border-radius: 10px;
+    }
+}
+
+.linkVolver2 {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.1rem;
+    padding: 0.5rem 2.5rem;
+    /* Agregar efecto de botón presionado */
+    transition: transform 1s, box-shadow 1s;
+
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px var(--resplandor);
+        border-radius: 10px;
+    }
+}
