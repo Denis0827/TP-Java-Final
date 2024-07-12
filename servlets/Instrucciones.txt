@@ -1,0 +1,155 @@
+Instrucciones completas del video de servlets del profe
+-------------------------------------------------------
+
+Para instalar la extencion dentro de VSCode 'Community Server Connectors'....
+Al terminar de instalarlo aparece en la seccion EXPLORER la solapita de SERVERS.
+En Community Server Connector, botón derecho y crear server. 
+Arriba en el centro aparece Download server? YES
+Seleccionamos el 'Apache Tomcat 10.1.4'
+Aceptamos la licencia, continuamos.... y se pondrá a descargar...
+
+
+
+
+
+1) Creamos el proyecto MAVEN como siempre.
+
+2) Desntro del POM.xml 
+
+
++Desde la linea 7 a la 15 aprox:
+ 
+ <groupId>ar.cac</groupId> <!-- -->
+ <artifactId>servlet</artifactId> <!-- Nombre que le damos al proyecto desde MAVEN -->
+ <version>1.0.0-SNAPSHOT</version> <!-- Version que le damos al proyecto desde MAVEN -->
+  
+ <packaging>war</packaging><!-- Agrego esta linea para convertir un proyecto en web -->
+  
+ <!-- este name debe coincidir con el <finalname> que aparece en las ultimas lineas -->
+ <name>servlet</name>
+
+
++Agregamos la siguiente dependencia:
+
+    <!-- Habilito la posibilidad de usar servlets -->
+    <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api - Agrego esta dependencia para convertir en web el proyecto -->
+    <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>5.0.0</version>
+        <scope>provided</scope>
+    </dependency>  
+
+
++Todo lo que esta en <pluginManagement> (incluido), o sea los <plugins> los borramos y reemplazamos por:
+
+<plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.3.1</version>
+    </plugin>
+
+</plugins>
+
+
++Finalmente agregamos en la antepenultima linea
+
+<finalName>servlet</finalName> <!-- Es el nombre que pusimos en <name> mas arriba
+
+  </build>
+</project>
+
+
+
+
+3) Creamos una carpeta dentro del proyecto (No como java proyect, sino como explorador de archivos)
+
+[nombre del proyecto ej:servlet]/src/main y en main, con el botón derecho crear carpeta con el nombre del proyecto ej:servlet
+
+dentro de esta carpeta otra vez botón derecho y crear carpeta 'WEB-INF'
+
+dentro de 'WEB-INF' creamos un único archivo llamado 'web.xml' (todo en minúscula).
+
+El contenido de este archivo es:
+
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+  version="5.0"
+  metadata-complete="false">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>Welcome to Tomcat</description>
+
+</web-app>
+
+
+
+4) Ahora vamos a modificar el 'main' para que escuche los request de internet (controller). El main quedara asi:
+
+
+package ar.cac;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+/**
+ * Hello world!
+ *
+ */
+
+
+ // la forma de llamar al servlet sera http://localhost:8080/servlet/Appmag
+@WebServlet("/Appmag")
+public class App extends HttpServlet{
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        
+        resp.getWriter().println("Hello World! MaG Servlet"); //muestra por html
+        System.out.println( "Hello World! MaG Servlet" ); //muestra por consola
+    }
+
+}
+
+
+
+
+
+5) En la pestana MAVEN del Explorer de VSCode desplegamos 'LifeCycle' y seleccionamos 'Install'
+
+aquí puede pedir que indiquemos donde se encuentra el ejecutable MAVEN...
+
+Si el VSCODE pide el path a maven al dar install:
+
+c:\Users\MaG\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3\bin\mvn.cmd
+
+
+
+Si todo va bien se generara un [nombre del proyecto].war que se encontrara en [nombre del proyecto]/target/[nombre del proyecto].war
+
+
+
+6) en la pestana 'SERVERS' del explorer, con el botón derecho, agregamos el .war que creamos al servidor con 'ADD DEPLOYMENT'
+
+usamos la opción 'FILE' que aparece arriba en el medio para ir al path donde quedo el .war
+
+
+No olvidemos 'START SERVER' para que funcione. Ahora desde el navegador podemos probarlo con:
+
+http://localhost:8080/servlet/Appmag
+
+http://localhost:8080/[nombre del proyecto]/[nombre que pusimos el notation (@WebServlet("/Appmag"))  ej: Appmag] 
+
+
+
